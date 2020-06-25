@@ -1,4 +1,5 @@
 using System;
+using NerdStore.Catalogo.Domain.ValueObjects;
 using NerdStore.Core.DomainObjects;
 
 namespace NerdStore.Catalogo.Domain
@@ -6,7 +7,14 @@ namespace NerdStore.Catalogo.Domain
     public class Produto : Entity, IAggregateRoot // Interfaces de marcação
     {
         public Produto(
-            string nome, string descricao, bool ativo, decimal valor, DateTime dataCadastro, string imagem, Guid categoriaId)
+            string nome,
+            string descricao,
+            bool ativo,
+            decimal valor,
+            DateTime dataCadastro,
+            string imagem,
+            Guid categoriaId,
+            Dimensoes dimensoes)
         {
             Nome = nome;
             Descricao = descricao;
@@ -15,6 +23,7 @@ namespace NerdStore.Catalogo.Domain
             DataCadastro = dataCadastro;
             Imagem = imagem;
             CategoriaId = categoriaId;
+            Dimensoes = dimensoes;
             Validar();
         }
 
@@ -27,6 +36,7 @@ namespace NerdStore.Catalogo.Domain
         public int QuantidadeEstoque { get; private set; }
         public Guid CategoriaId { get; private set; }
         public Categoria Categoria { get; private set; }
+        public Dimensoes Dimensoes { get; private set; }
 
         public void Ativar() => Ativo = true; // Add Rock Seter
         public void Desativar() => Ativo = false;
