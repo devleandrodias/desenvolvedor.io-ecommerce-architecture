@@ -11,19 +11,20 @@ namespace NerdStore.Catalogo.Domain
             string descricao,
             bool ativo,
             decimal valor,
+            Guid categoriaId,
             DateTime dataCadastro,
             string imagem,
-            Guid categoriaId,
             Dimensoes dimensoes)
         {
+            CategoriaId = categoriaId;
             Nome = nome;
             Descricao = descricao;
             Ativo = ativo;
             Valor = valor;
             DataCadastro = dataCadastro;
             Imagem = imagem;
-            CategoriaId = categoriaId;
             Dimensoes = dimensoes;
+
             Validar();
         }
 
