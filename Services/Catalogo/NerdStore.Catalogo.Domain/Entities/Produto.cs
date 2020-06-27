@@ -2,7 +2,7 @@ using System;
 using NerdStore.Catalogo.Domain.ValueObjects;
 using NerdStore.Core.DomainObjects;
 
-namespace NerdStore.Catalogo.Domain
+namespace NerdStore.Catalogo.Domain.Entities
 {
     public class Produto : Entity, IAggregateRoot // Interfaces de marcação
     {

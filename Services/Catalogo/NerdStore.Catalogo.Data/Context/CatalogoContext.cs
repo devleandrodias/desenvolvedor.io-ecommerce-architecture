@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using NerdStore.Catalogo.Domain;
+using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Core.Data;
 
 namespace NerdStore.Catalogo.Data

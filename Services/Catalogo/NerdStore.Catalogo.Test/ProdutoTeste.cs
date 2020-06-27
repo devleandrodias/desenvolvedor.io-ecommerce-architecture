@@ -1,5 +1,6 @@
 using System;
 using NerdStore.Catalogo.Domain;
+using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Catalogo.Domain.ValueObjects;
 using NerdStore.Core.DomainObjects;
 using Xunit;

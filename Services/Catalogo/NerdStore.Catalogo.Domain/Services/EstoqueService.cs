@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Catalogo.Domain.Events;
 using NerdStore.Catalogo.Domain.Interface;
 using NerdStore.Core.Bus;

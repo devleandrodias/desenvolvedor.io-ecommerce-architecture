@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NerdStore.Catalogo.Domain.Entities;
 using NerdStore.Core.Data;
 
 namespace NerdStore.Catalogo.Domain.Interface
