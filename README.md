@@ -1,1 +1,0 @@
-# desenvolvedor.io-ecommerce-architecture
